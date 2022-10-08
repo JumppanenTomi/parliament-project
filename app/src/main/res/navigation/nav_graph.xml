@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListMembers">
+    <fragment
+        android:id="@+id/ListMembers"
+        android:name="fi.tomijumppanen.parliamentproject.ui.ListMembers"
+        android:label="fragment_listaa_jasenet"
+        tools:layout="@layout/fragment_list_members" >
+        <action
+            android:id="@+id/action_ListMember_to_ShowMember"
+            app:destination="@id/ShowMember"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/ShowMember"
+        android:name="fi.tomijumppanen.parliamentproject.ui.ShowMember"
+        android:label="fragment_nayta_jasen"
+        tools:layout="@layout/fragment_show_member" >
+        <action
+            android:id="@+id/action_ShowMember_to_ListMembers"
+            app:destination="@id/ListMembers"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+</navigation>
