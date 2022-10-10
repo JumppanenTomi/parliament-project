@@ -1,18 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Parliament project</string>
+    <string name="app_name">Eduskunta projekti</string>
     <string name="kommenttisi">Kommenttisi</string>
     <string name="kirjaa">Kirjaa</string>
     <string name="arvosana_1_10">Arvosana 1-10</string>
-    <string name="kuva_edustajasta">kuva edustajasta</string>
+    <string name="kuva_edustajasta">Kuva edustajasta</string>
     <string name="henkil_n_nimi">Henkilön nimi</string>
     <string name="istumapaikka">"Istumapaikka: "</string>
     <string name="puolue">"Puolue: "</string>
     <string name="ministeri">"Ministeri: "</string>
     <string name="syntynyt">"Syntynyt: "</string>
-    <string name="vaalipiiri">"Vaalipiiri: "</string>
     <string name="twitter_tili">Twitter-tili</string>
     <string name="arvostele">Arvostele</string>
     <string name="arvosana">Arvosana</string>
     <string name="t_m_on_kommentin_placeholder_teksti">Tämä on kommentin placeholder teksti.</string>
     <string name="_10_10_0">10/</string>
+    <string name="vaalipiiri">"Vaalipiiri: "</string>
 </resources>

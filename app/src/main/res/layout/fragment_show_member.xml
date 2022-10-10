@@ -14,10 +14,10 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/edustajaKuva"
+                android:id="@+id/memberPicture"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:contentDescription="image of member"
+                android:contentDescription="@string/kuva_edustajasta"
                 android:scaleType="center"
                 app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -26,126 +26,120 @@
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
-                android:id="@+id/nimiTeksti"
+                android:id="@+id/nameText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/roboto"
-                android:text="Matti Meikäläinen"
+                android:text="@string/henkil_n_nimi"
                 android:textSize="34sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edustajaKuva" />
+                app:layout_constraintTop_toBottomOf="@+id/memberPicture" />
 
             <TextView
-                android:id="@+id/istumapaikkaTeksti"
+                android:id="@+id/seatText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/roboto_light"
-                android:text="Istumapaikka: 1"
+                android:text="@string/istumapaikka"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nimiTeksti" />
+                app:layout_constraintTop_toBottomOf="@+id/nameText" />
 
             <TextView
-                android:id="@+id/puolueTeksti"
+                android:id="@+id/partyText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/roboto_light"
-                android:text="Puolue: SDP"
+                android:text="@string/puolue"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/istumapaikkaTeksti" />
+                app:layout_constraintTop_toBottomOf="@+id/seatText" />
 
             <TextView
-                android:id="@+id/ministeriTeksti"
+                android:id="@+id/ministerText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/roboto_light"
-                android:text="Ministeri: Kyllä"
+                android:text="@string/ministeri"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/puolueTeksti" />
+                app:layout_constraintTop_toBottomOf="@+id/partyText" />
 
             <TextView
-                android:id="@+id/syntymavuosiTeksti"
+                android:id="@+id/birthYeartext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/roboto_light"
-                android:text="Syntynyt: 10.09.1990"
+                android:text="@string/syntynyt"
                 android:textSize="16sp"
+                android:visibility="invisible"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ministeriTeksti" />
+                app:layout_constraintTop_toBottomOf="@+id/ministerText" />
 
             <TextView
-                android:id="@+id/vaalipiiriTeksti"
+                android:id="@+id/areaText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/roboto_light"
-                android:text="Vaalipiiri: Helsinki"
+                android:text="@string/vaalipiiri"
+                android:textSize="16sp"
+                android:visibility="invisible"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/syntymavuosiTeksti" />
+                app:layout_constraintTop_toBottomOf="@+id/birthYeartext" />
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                android:id="@+id/twitterNappi"
+                android:id="@+id/twitterButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
-                android:text="Twitter-tili"
+                android:text="@string/twitter_tili"
+                android:visibility="invisible"
                 app:fabSize="normal"
-                app:layout_constraintBottom_toTopOf="@+id/lisaaArvostelu"
+                app:layout_constraintBottom_toTopOf="@+id/addreviewButton"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                android:id="@+id/lisaaArvostelu"
+                android:id="@+id/addreviewButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
-                android:text="Arvostele"
-                app:fabSize="normal"
-                app:layout_constraintBottom_toTopOf="@+id/lisaaKommentti"
-                app:layout_constraintEnd_toEndOf="parent" />
-
-            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                android:id="@+id/lisaaKommentti"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:text="Kommentoi"
+                android:text="@string/arvostele"
                 app:fabSize="normal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </FrameLayout>
